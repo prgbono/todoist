@@ -8,7 +8,7 @@ export const Sidebar = () => (
         <span>
           <FaInbox />
         </span>
-        <span>Inbox</span>
+        <span>InboxT</span>
       </li>
       <li>
         <span>
