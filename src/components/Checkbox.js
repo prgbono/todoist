@@ -8,7 +8,7 @@ export const Checkbox = ({id}) => {
       .collection('tasks')
       .doc(id)
       .update({
-        archiver: true
+        archived: true
       });
   };
 

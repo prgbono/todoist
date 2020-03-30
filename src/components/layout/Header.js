@@ -12,7 +12,6 @@ export const Header = () => {
         </div>
         <div classmame="settings">
           <ul>
-            <li>+</li>
             <li><FaPizzaSlice /></li>
           </ul>
         </div>
