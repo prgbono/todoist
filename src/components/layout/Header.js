@@ -8,11 +8,12 @@ export const Header = () => {
     <header className="header" data-testid="header">
       <nav>
         <div classmame="logo">
-          <img src="/images/logo.png" alt="TodoIst" />
+          <img src="/images/logo.png" alt="Todoist" />
         </div>
         <div classmame="settings">
           <ul>
-            <li><FaPizzaSlice /></li>
+            <li data-testid="quick-add-task-action" classmame="settings__add">+</li>
+            <li data-testid="dark-mode-action" classmame="settings__darkmode"><FaPizzaSlice /></li>
           </ul>
         </div>
       </nav>
