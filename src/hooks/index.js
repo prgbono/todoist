@@ -1,3 +1,6 @@
+
+
+
 import { useState, useEffect } from 'react';
 import { firebase } from '../firebase';
 import { collatedTasksExist } from '../helpers';
@@ -67,6 +70,7 @@ export const useProjects = () => {
           setProjects(allProjects);
         }
       });
-  })
-}
+  }, [projects]);
 
+  return { projects, setProjects };
+};
