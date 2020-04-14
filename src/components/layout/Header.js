@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaPizzaSlice } from 'react-icons/fa'
+import { FaPizzaSlice } from 'react-icons/fa';
 import { AddTask } from '../AddTask';
 
 export const Header = ({ darkMode, setDarkMode }) => {
@@ -9,13 +9,15 @@ export const Header = ({ darkMode, setDarkMode }) => {
   return (
     <header className="header" data-testid="header">
       <nav>
-        <div classmame="logo">
+        <div className="logo">
           <img src="/images/logo.png" alt="Todoist" />
         </div>
-        <div classmame="settings">
+        <div className="settings">
           <ul>
-            <li data-testid="quick-add-task-action" classmame="settings__add">
+            <li className="settings__add">
               <button
+                data-testid="quick-add-task-action" 
+                aria-label="Quick add task"
                 type = 'button'
                 onClick = {() => {
                   setShowQuickAddTask(true);
@@ -29,8 +31,10 @@ export const Header = ({ darkMode, setDarkMode }) => {
                 +
               </button>
             </li>
-            <li data-testid="dark-mode-action" classmame="settings__darkmode">
+            <li className="settings__darkmode">
               <button
+                data-testid="dark-mode-action"
+                aria-label="Darkmode on/off"
                 type = 'button'
                 onClick = {() => setDarkMode(!darkMode)}
                 onKeyDown = {() => setDarkMode(!darkMode)}

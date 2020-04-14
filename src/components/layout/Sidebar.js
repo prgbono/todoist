@@ -69,7 +69,7 @@ export const Sidebar = () => {
           <span>
             <FaRegCalendarAlt />
           </span>
-          <span>Next 7 days</span>
+          <span>Next 7 dayss</span>
         </div>    
       </li>
     </ul>
